@@ -46,10 +46,10 @@ Ensure you have the following installed:
 
    ```bash
    git clone https://github.com/Azhar730/cycle-mart-client
-   cd a4-client
+   cd cycle-mart-client
    npm install
    npm run dev
 
 2. Live Link
   ```bash
-  https://cycle-mart-chi.vercel.app/
+  https://cycle-mart-chi.vercel.app
