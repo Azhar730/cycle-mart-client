@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# A4 Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A4 Client is a modern web application built with React, TypeScript, and Vite. It provides a seamless user experience for managing orders, uploading files, and more.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [Folder Structure](#folder-structure)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Order Verification**: Verify orders with detailed information.
+- **File Uploads**: Upload images and PDFs with preview and validation.
+- **Theme Support**: Light, dark, and system themes.
+- **Responsive Design**: Fully responsive UI for all devices.
+- **State Management**: Integrated with Redux for state management.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend**: React, TypeScript, Vite
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **Icons**: Lucide React, React Icons
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Azhar730/cycle-mart-client
+   cd a4-client
+   npm install
+   npm run dev
