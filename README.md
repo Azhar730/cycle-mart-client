@@ -49,3 +49,7 @@ Ensure you have the following installed:
    cd a4-client
    npm install
    npm run dev
+
+2. Live Link
+  ```bash
+  https://cycle-mart-chi.vercel.app/

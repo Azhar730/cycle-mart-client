@@ -1,4 +1,9 @@
-const Slide = ({ img, text }) => {
+interface SlideProps {
+    img: string;
+    text: string;
+}
+
+const Slide = ({ img, text }: SlideProps) => {
     return (
         <div
             className='w-full bg-center bg-cover h-[38rem]'
