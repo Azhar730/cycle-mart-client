@@ -9,6 +9,7 @@ const Profile = () => {
   const dispatch = useAppDispatch();
   const handleLogout = () => {
     dispatch(logout());
+    localStorage.removeItem("token");
     navigate('/login')
     toast.success("Logout successful");
   };

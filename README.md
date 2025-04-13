@@ -19,7 +19,6 @@ A4 Client is a modern web application built with React, TypeScript, and Vite. It
 
 - **Order Verification**: Verify orders with detailed information.
 - **File Uploads**: Upload images and PDFs with preview and validation.
-- **Theme Support**: Light, dark, and system themes.
 - **Responsive Design**: Fully responsive UI for all devices.
 - **State Management**: Integrated with Redux for state management.
 
@@ -53,7 +52,7 @@ Ensure you have the following installed:
 2. Live Link
   ```bash
   https://cycle-mart-chi.vercel.app
-  
+
 3. Admin Login
   ```bash
   email: azharmahmud730@gmail.com

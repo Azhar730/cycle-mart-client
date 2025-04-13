@@ -155,6 +155,7 @@ const Navbar = () => {
                   <button
                     onClick={() => {
                       dispatch(logout());
+                      localStorage.removeItem("token");
                       toast.success("Log out Successful");
                       navigate("/login");
                     }}
@@ -228,6 +229,7 @@ const Navbar = () => {
                   <button
                     onClick={() => {
                       dispatch(logout());
+                      localStorage.removeItem("token");
                       toast.success("Log out Successful");
                       navigate("/login");
                     }}

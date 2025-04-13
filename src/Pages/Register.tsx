@@ -47,8 +47,6 @@ const Register = () => {
           email: formData.email,
           password: formData.password,
         }).unwrap();
-        console.log(loginRes);
-        console.log('register',loginRes.data.id);
         dispatch(
           setUser({
             user: {
@@ -60,6 +58,7 @@ const Register = () => {
             token: loginRes.token,
           })
         );
+        localStorage.setItem("token", loginRes.token);
         navigate("/");
       }
     } catch (error: any) {

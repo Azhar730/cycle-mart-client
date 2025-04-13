@@ -19,6 +19,7 @@ const ProtectedRoute = ({
   }
   if (role !== undefined && role !== (user as TUser)?.role) {
     dispatch(logout());
+    localStorage.removeItem("token");
     return <Navigate to="/login" replace={true} />;
   }
   if (!token) {
