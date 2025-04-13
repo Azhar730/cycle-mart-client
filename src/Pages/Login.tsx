@@ -33,6 +33,7 @@ const Login = () => {
     try {
       const res = await login(formData).unwrap();
       if (res.success) {
+        localStorage.setItem("token", res.token);
         toast.success(res.message, { id: toastId });
         dispatch(
           setUser({
